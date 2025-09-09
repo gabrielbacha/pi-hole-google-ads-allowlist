@@ -1,0 +1,1 @@
+# pi-hole-google-ads-allowlist
