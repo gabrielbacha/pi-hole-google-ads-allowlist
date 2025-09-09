@@ -1,0 +1,73 @@
+# Pi-hole Google Ads Allowlist
+# This file contains domains that should be allowed for Google advertising and keyword-related functionality
+# Add this list to your Pi-hole allowlist to ensure Google ads and related services work properly
+
+# Core Google Advertising Services
+googleadservices.com
+www.googleadservices.com
+googleads.g.doubleclick.net
+googlesyndication.com
+www.googlesyndication.com
+pagead2.googlesyndication.com
+tpc.googlesyndication.com
+
+# Google Tag Manager and Analytics
+googletagmanager.com
+www.googletagmanager.com
+google-analytics.com
+www.google-analytics.com
+ssl.google-analytics.com
+
+# Google DoubleClick Network
+doubleclick.net
+www.doubleclick.net
+ad.doubleclick.net
+stats.g.doubleclick.net
+cm.g.doubleclick.net
+
+# Google Static Content and APIs
+gstatic.com
+www.gstatic.com
+ssl.gstatic.com
+encrypted.gstatic.com
+fonts.gstatic.com
+
+# Google AdSense and Publisher Services
+googletag.com
+www.googletag.com
+adsense.com
+www.adsense.com
+adsense.google.com
+partner.googleadservices.com
+
+# Google Shopping and Merchant Services
+merchants.google.com
+shopping.google.com
+merchantcenter.google.com
+shoppingads.google.com
+
+# Google Ads Conversion Tracking
+googleadservices.com
+conversion.google.com
+google.com.conversion
+googleconversion.com
+
+# Google Mobile Ads
+googleads.mobile.g.doubleclick.net
+mobileads.google.com
+
+# Google Video and Display Ads
+youtube.com
+www.youtube.com
+googlevideo.com
+ytimg.com
+
+# Google Search Ads and Keywords
+google.com
+www.google.com
+clients1.google.com
+
+# Additional Google Services for Ad Functionality
+apis.google.com
+ajax.googleapis.com
+fonts.googleapis.com
