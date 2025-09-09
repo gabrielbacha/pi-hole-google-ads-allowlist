@@ -1,78 +1,88 @@
-# Pi-hole Google Ads Allowlist - Regex Pattern Coverage
-# This file uses regex-inspired patterns to cover Google advertising domain variations
-# Optimized for comprehensive coverage with minimal entries
+# Pi-hole Google Ads Allowlist - For Business Configuration
+# Temporarily enable for Google Ads, Analytics, and Keyword management
+# Use: pihole -w -l /path/to/this/file (to enable)
+# Disable: pihole -b -l /path/to/this/file (to block again)
 
-# Core Google Advertising Services - Covers *.googleadservices.com pattern
+# Core Google Advertising Services
 googleadservices.com
 www.googleadservices.com
 partner.googleadservices.com
 
-# Google Syndication Network - Covers *.googlesyndication.com pattern  
+# Google Syndication Network
 googlesyndication.com
 www.googlesyndication.com
 pagead2.googlesyndication.com
 tpc.googlesyndication.com
 
-# DoubleClick Advertising Network - Covers *.doubleclick.net and *.g.doubleclick.net patterns
+# DoubleClick Advertising Network
 doubleclick.net
 www.doubleclick.net
 googleads.g.doubleclick.net
-googleads.mobile.g.doubleclick.net
-ad.doubleclick.net
+googleads4.g.doubleclick.net
 stats.g.doubleclick.net
 cm.g.doubleclick.net
+ad.doubleclick.net
+fls.doubleclick.net
 
-# Google Static Content Delivery - Covers *.gstatic.com pattern
+# Google Static Content (required for ads display)
 gstatic.com
 www.gstatic.com
 fonts.gstatic.com
 ssl.gstatic.com
-encrypted.gstatic.com
+encrypted-tbn0.gstatic.com
 
-# Google Analytics - Covers *.google-analytics.com pattern + explicit requests
+# Google Analytics
 google-analytics.com
 www.google-analytics.com
 ssl.google-analytics.com
 analytics.google.com
 www.analytics.google.com
 
-# Google Tag Manager - Covers *.googletagmanager.com pattern
+# Google Tag Manager
 googletagmanager.com
 www.googletagmanager.com
 
-# Google APIs and Services - Covers *.googleapis.com and core API patterns
-apis.google.com
+# Google APIs (essential for ads interface)
+googleapis.com
+www.googleapis.com
 ajax.googleapis.com
 fonts.googleapis.com
 
-# Google AdSense - Covers AdSense domain patterns
+# Google AdSense
 adsense.google.com
-adsense.com
-www.adsense.com
-googletag.com
-www.googletag.com
+pagead2.googleadservices.com
+partner.googleadservices.com
 
-# YouTube/Video Advertising - Covers video ad patterns
+# Google Ads Interface & Keyword Planner
+ads.google.com
+adwords.google.com
+adwords.google.co.uk
+adwords.googleblog.com
+
+# Google Marketing Platform
+marketingplatform.google.com
+tagmanager.google.com
+optimize.google.com
+
+# Conversion Tracking
+googleadservices.com
+google.com
+
+# YouTube Advertising (if managing video ads)
 youtube.com
 www.youtube.com
-googlevideo.com
-ytimg.com
+i.ytimg.com
 
-# Google Shopping/Commerce - Covers shopping and merchant patterns
-shopping.google.com
+# Google Shopping/Merchant Center
 merchants.google.com
 merchantcenter.google.com
-shoppingads.google.com
+shopping.google.com
 
-# Conversion Tracking - Covers conversion tracking patterns
-conversion.google.com
-google.com.conversion
-googleconversion.com
-
-# Mobile Advertising - Covers mobile ad patterns
-mobileads.google.com
-
-# Core Google Services - Essential for ad functionality
-google.com
-www.google.com
+# Additional domains often needed
 clients1.google.com
+clients2.google.com
+clients3.google.com
+clients4.google.com
+accounts.google.com
+myaccount.google.com
+payments.google.com
